@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ferre"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-07-05 12:14:34 "/>
+        <attribute name="created" value="ZmVycmU7REVTS1RPUC1JTzM1QTRHOzIwMjEtMDYtMzA7IjEyOjE5OjIwICI7Mjc0Mw=="/>
+        <attribute name="edited" value="ZmVycmU7REVTS1RPUC1JTzM1QTRHOzIwMjEtMDctMDU7IjEyOjE0OjM0ICI7MzsyODU2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, nota4, somatoria, media" type="Real" array="False" size=""/>
+            <declare name="Nome, Sobrenome" type="String" array="False" size=""/>
+            <output expression="&quot;Qual &#233; o seu nome?&quot;" newline="True"/>
+            <input variable="Nome"/>
+            <output expression="&quot;E o seu sobrenome?&quot;" newline="True"/>
+            <input variable="Sobrenome"/>
+            <output expression="&quot;Ol&#225; &quot; &amp; Nome &amp; &quot; &quot; &amp; Sobrenome" newline="True"/>
+            <output expression="&quot;Me diga sua nota do primeiro bimestre&quot;" newline="True"/>
+            <input variable="nota1"/>
+            <output expression="&quot;E a do segundo?&quot;" newline="True"/>
+            <input variable="nota2"/>
+            <output expression="&quot;A do terceiro? Calma j&#225; est&#225; acabando!&quot;" newline="True"/>
+            <input variable="nota3"/>
+            <output expression="&quot;Finalmente! A do quarto bimestre!&quot;" newline="True"/>
+            <input variable="nota4"/>
+            <assign variable="somatoria" expression="nota1+nota2+nota3+nota4"/>
+            <assign variable="media" expression="somatoria/4"/>
+            <output expression="Nome &amp; &quot; &quot; &amp; Sobrenome &amp; &quot; sua m&#233;dia &#233; &quot; &amp; media" newline="True"/>
+            <if expression="media&gt;=7">
+                <then>
+                    <output expression="&quot;Parab&#233;ns, &quot; &amp; Nome &amp; &quot; voc&#234; foi aprovadE!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Poxa &quot; &amp; Nome &amp; &quot; voc&#234; vai ter que fazer recupera&#231;&#227;o :( &quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
